@@ -1,0 +1,18 @@
+{
+  "name": "si-bot-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lpsouza/si-bot-interface.git"
+  },
+  "author": "Luiz Souza",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^3.38.0"
+  }
+}
