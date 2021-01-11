@@ -7,7 +7,11 @@ const bot = new Telegraf(TOKEN);
 bot.use(Telegraf.session());
 
 bot.use((context, next) => {
-    console.log(JSON.stringify(context, null, 2));
+    let chatId = context.chat.id;
+    let chatName = context.chat.title;
+    let userId = context.from.id;
+    let userName = context.from.first_name;
+    console.log(chatId, chatName, userId, userName);
     next();
 });
 
