@@ -12,7 +12,12 @@ bot.use((context, next) => {
     let userName = context.from.first_name;
     console.log(chatId, chatName, userId, userName);
     }
+    if (context.chat.id == process.env.GROUP_ID) {
     next();
+    }
+    else {
+        context.reply("NOT AUTHORIZED!");
+    }
 });
 
 
