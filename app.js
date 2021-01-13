@@ -23,7 +23,6 @@ bot.use((context, next) => {
     }
     else {
         console.log(`The user ${userName} has atempt to access the bot out of group.`);
-        context.reply("NOT AUTHORIZED!");
     }
 });
 
