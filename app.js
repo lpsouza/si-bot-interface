@@ -14,7 +14,7 @@ bot.use((context, next) => {
         if (chatId == userId) {
             console.log(`User: ${userName} (${userId}) access the bot direct`);
         } else {
-            console.log(`User: ${userName} (${userId}) access the bot on ${chatName} (${chatId}) group`);
+            console.log(`User: ${userName} (${userId}) access the bot on "${chatName}" (${chatId}) group`);
         }
     }
 
