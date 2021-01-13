@@ -29,4 +29,6 @@ bot.use((context, next) => {
 
 bot.command('/about', (context) => context.replyWithMarkdown(process.env.ABOUT_MESSAGE));
 
+bot.command('/welcome', (context) => context.replyWithPhoto(process.env.WELCOME_IMAGE));
+
 bot.launch();
