@@ -1,8 +1,6 @@
 const { Telegraf } = require('telegraf');
 
-const TOKEN = process.env.BOT_TOKEN;
-const bot = new Telegraf(TOKEN);
-
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.use(Telegraf.session());
 
